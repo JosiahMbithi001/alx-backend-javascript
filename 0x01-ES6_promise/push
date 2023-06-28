@@ -1,7 +1,7 @@
+
 #!/usr/bin/env bash
 
-read -p "commit message"message
-
+read -p "the commit message: " message
 git add .
 git commit -m "$message"
 git push
