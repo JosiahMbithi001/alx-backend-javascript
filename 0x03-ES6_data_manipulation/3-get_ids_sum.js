@@ -1,4 +1,4 @@
-export default getStudentIdsSum(students) {
-    return students.reduce((obj => 
-    sum + obj.id), 0)
+export default function getStudentIdsSum(students) {
+  if (!Array.isArray(students)) { return 0; }
+  return students.reduce((sum, student) => sum + student.id, 0);
 }
